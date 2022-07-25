@@ -8,7 +8,7 @@ const getMediaDevices = () => {
       .then(devices => {
         devices.forEach(device => {
           console.log(
-            `${device.kind}: ${device.label} id = ${device.deviceId}`
+            `${device.kind}: ${device.label} id = ${device.deviceId} and groupId = ${device.groupId}`
           );
         });
       })

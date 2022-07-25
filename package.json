@@ -9,18 +9,22 @@
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
-    "prepare": "npm run compile",
+    "prepare": "husky install && npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint"
   },
   "files": [
-    "build"
+    "lib"
   ],
   "author": "Aneesh Bhat",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^14.11.2",
     "gts": "^3.1.0",
-    "typescript": "^4.7.4",
-    "@types/node": "^14.11.2"
+    "husky": "^8.0.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "lint-staged": "^13.0.3"
   }
 }
