@@ -1,0 +1,26 @@
+{
+  "name": "webrtc-cam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "files": [
+    "build"
+  ],
+  "author": "Aneesh Bhat",
+  "license": "ISC",
+  "devDependencies": {
+    "gts": "^3.1.0",
+    "typescript": "^4.7.4",
+    "@types/node": "^14.11.2"
+  }
+}
